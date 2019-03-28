@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- 
+Author: Anika Shields and Lexi Hawks
+Date: October 17, 2017
+Purpose: Assignment 3
+Filename: bookstore.html
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">      
+    <title>Basic JavaScript</title>
+  </head>
+  
+  <body>
+    <h1>Welcome to the Bookstore</h1>
+    <p id="Receipt"></p>
+    
+     <p>
+      <a href="http://validator.w3.org/check?uri=referer">
+       <img
+         src="http://cs.wellesley.edu/~cs110/Icons/valid-html5v2.png"
+         alt="Valid HTML 5"
+         title="Valid HTML 5"  
+         height="31" width="88">
+      </a>
+    </p>  
+    
+    <script>
+    
+      // prompts user for number of books to purchase
+      var numBooks = prompt("Enter the number of books to purchase:");
+      
+      /* conditional statement if number of books is less than 25, price per book is
+      $40, else price per book is $50 */
+      
+      var price;
+      if(parseInt(numBooks) < 25) {
+      	price = 50;
+      } else {
+      	price = 40;
+      }
+      
+      /* calculates total cost of all books */
+      var totalBookCost = parseInt(numBooks) * parseInt(price); 
+      
+      /* calculates tax of 7% on the total book cost */
+      var tax = parseInt(totalBookCost) * 0.07;
+      
+      /* calculates total order for number of books plus tax */
+      var totalOrder = parseInt(totalBookCost) + parseInt(tax);
+      
+      /* conditional statement if total order is less than $500 then shipping is $25, else
+      shipping is free */
+      
+      var shipping;
+      if(parseInt(totalOrder) < 500) {
+      	shipping = 25;
+      } else {
+      	shipping = 0;
+      }
+      	
+	  /* Stores the information, variables, results, and makes prices so that two 
+		digits appear after a decimal point.   */
+      
+      var results=
+      	"RECEIPT" + 
+      	"\n" + "Number of Books: " + numBooks + 
+      	"\n" + "Book Price: $" + price.toFixed(2) + 
+      	"\n" + "Total Book Cost: $" + totalBookCost.toFixed(2) + 
+      	"\n" + "Tax: $" + tax.toFixed(2) + 
+      	"\n" + "Shipping: $" + shipping.toFixed(2) + 
+      	"\n" + "Total Cost: $"  + totalOrder.toFixed(2);
+      	
+      /* Displays results, as a pop-up window */
+      	alert(results)
+      	
+      /* Displays results in console log */
+      	console.log(results);
+      	
+      /* Displays results on page */
+      	document.getElementById("Receipt").innerHTML += "RECEIPT" + "<br>" + "Number of Books: " + numBooks + 
+      	"<br>" + "Book Price: $" + price.toFixed(2) + 
+      	"<br>" + "Total Book Cost: $" + totalBookCost.toFixed(2) +
+      	"<br>" + "Tax: $" + tax.toFixed(2) +
+      	"<br>" + "Shipping: $" + shipping.toFixed(2) + 
+      	"<br>" + "Total Cost: $"  + totalOrder.toFixed(2);
+		
+    </script>
+  
+   
+  </body>
+</html>
+  
