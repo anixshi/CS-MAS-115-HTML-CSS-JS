@@ -1,5 +1,5 @@
 # CS-MAS-115-HTML-CSS-JS
-Homework Assignments for CS/MAS 115: Computing for the Socio-Techno World
+Homework Assignments for CS/MAS 115: Computing for the Socio-Techno World (Fall 2017)
 
 From course website:
 "CS115 is for students who want a broad exposure to the fundamental concepts 
