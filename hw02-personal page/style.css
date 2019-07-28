@@ -1,0 +1,100 @@
+/*
+FILE NAME: style.css
+WRITTEN BY: Anika Shields
+DATE: September 30, 2017
+PURPOSE: CS115/ΜΑΣ115 assignment 2
+*/
+
+body {
+    border: 10px solid white;
+    background: url("images/seamless.jpg");
+    
+}
+
+/* Styling the headers, links lists to my liking. */
+
+h1 {
+font-size: 40pt;
+color: white;
+font-family: 'Calibri',sans-serif;
+text-align: center;
+line-height: 180%;
+}
+
+h2 {
+font-size: 30pt;
+color: white;
+font-family: 'Calibri',sans-serif;
+text-align: center;
+line-height: 180%;
+}
+
+h3 {
+font-size: 15pt;
+color: white;
+font-style: italic;
+font-family: 'Calibri',sans-serif;
+text-align: center;
+line-height: 180%;
+}
+
+p {
+font-size: 15pt;
+color: navy;
+font-family: 'Calibri',sans-serif;
+text-align: center;
+line-height: 180%;
+}
+
+ul {
+font-size: 15pt;
+color: navy;
+font-family: 'Calibri',sans-serif;
+line-height: 180%;
+}
+
+ol {
+font-size: 15pt;
+color: navy;
+font-family: 'Calibri',sans-serif;
+line-height: 180%;
+}
+
+a:link, a:visited {
+color: white;
+padding: 1px;
+}
+
+a:hover {
+color: navy;
+}
+
+/* Tilting and rounding my baby pictures. Got this from lab05 solutions. */
+.tiltleft {
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg); 
+    border-radius: 10px
+}
+
+.tiltright { 
+    transform:rotate(10deg);
+    -webkit-transform:rotate(10deg); 
+    border-radius: 10px
+}
+
+
+/* Creating classes and an ID to better format my content*/
+.coursesf2017 {
+	border: 5px dashed white; 
+    width: 950px;
+    margin: auto;
+}
+
+#basicInfo {
+	border: 2px outset white;
+}
+
+.centList {
+	width: 475px;
+	margin: auto;
+}
